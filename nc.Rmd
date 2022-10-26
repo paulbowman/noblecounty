@@ -1,23 +1,18 @@
 ---
-title: "nc"
 knit: (function(input_file, encoding) {
-  out_dir <- 'docs';
+  out_dir <- 'election';
   rmarkdown::render(input_file,
   encoding=encoding,
-  output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
+  output_file=file.path(dirname(input_file), out_dir, 'nc.html'))})
 output: html_document
-date: "2022-10-26"
 ---
-
-## Title
-
-Content
 
 ```{r include=FALSE}
 library(dplyr); library(glue); library(scales); 
 library(htmltools); library(sf); library(leaflet)
 nc_data <-rio::import("county.csv")
 
+election_title <- (nc_data[1,8])
 
 nc_geo <- sf::st_read("map.geojson", stringsAsFactors = FALSE)
 
@@ -41,6 +36,8 @@ dem_popup <- glue("<strong>Precinct {dem_df$Precinct}</strong><br /><strong>Winn
 leaflet() %>%
   addProviderTiles("CartoDB.Positron")
 ```
+
+## `r election_title`
 
 ```{r echo=FALSE}
 
