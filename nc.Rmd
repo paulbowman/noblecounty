@@ -4,6 +4,7 @@ knit: (function(input_file, encoding) {
   encoding=encoding,
   output_file=file.path(dirname(input_file), 'election.html'))})
 output: html_document
+title: "NC Election Map"
 ---
 
 ```{r include=FALSE}
@@ -37,6 +38,8 @@ leaflet() %>%
 ```
 
 ## `r election_title`
+
+
 
 ```{r echo=FALSE}
 

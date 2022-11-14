@@ -2,9 +2,7 @@ library(dplyr); library(glue); library(scales);
 library(htmltools); library(sf); library(leaflet)
 nc_data <-rio::import("county.csv")
 
-election_title <- (nc_data[8,1])
-
-print(election_title)
+election_title <- (nc_data[1,8])
 
 nc_geo <- sf::st_read("map.geojson", stringsAsFactors = FALSE)
 

@@ -1,7 +1,7 @@
 Precinct,Township,Turnout,Rep,Dem,Margin,Winner,Election
 1,Washington,0.6946,0.7636,0.2229,0.5407,GOP,President2020
 2,Sparta,0.6222,0.7495,0.2376,0.5119,GOP,
-3,Perry,0.5644,0.7708,0.2184,0.2184,GOP,
+3,Perry,0.5644,0.7708,0.2184,0.5524,GOP,
 4,Perry,0.4526,0.6235,0.3412,0.2823,GOP,
 5,Perry,0.4295,0.6566,0.3232,0.3334,GOP,
 6,Perry,0.4958,0.6296,0.3493,0.2803,GOP,
